@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751A6B6820F841550034FD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751A6B6620F841550034FD30 /* Main.storyboard */; };
+		751A6B6A20F841570034FD30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751A6B6920F841570034FD30 /* Assets.xcassets */; };
+		751A6B6D20F841570034FD30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751A6B6B20F841570034FD30 /* LaunchScreen.storyboard */; };
+		751A6B7020F841570034FD30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B6F20F841570034FD30 /* main.m */; };
+		751A6B8D20F848240034FD30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B8220F848240034FD30 /* AppDelegate.m */; };
+		751A6B8E20F848240034FD30 /* FMEncryptDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B8520F848240034FD30 /* FMEncryptDatabase.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		751A6B8F20F848240034FD30 /* FMEncryptDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B8720F848240034FD30 /* FMEncryptDatabaseQueue.m */; };
+		751A6B9020F848240034FD30 /* FMEncryptHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B8920F848240034FD30 /* FMEncryptHelper.m */; };
+		751A6B9120F848240034FD30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B8C20F848240034FD30 /* ViewController.m */; };
+		751A6B9720F8484B0034FD30 /* sm4.c in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B9320F8484B0034FD30 /* sm4.c */; };
+		751A6B9820F8484B0034FD30 /* sm4test.c in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B9520F8484B0034FD30 /* sm4test.c */; };
+		751A6B9920F8484B0034FD30 /* sms4.c in Sources */ = {isa = PBXBuildFile; fileRef = 751A6B9620F8484B0034FD30 /* sms4.c */; };
+		751A6B9B20F849860034FD30 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 751A6B9A20F849860034FD30 /* libsqlite3.tbd */; };
+		C30421B97A1365A889F174CE /* libPods-test-sm4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4811D2248F298793BE8A1123 /* libPods-test-sm4.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2346DC411CB6028E974770CA /* Pods-test-sm4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-sm4.release.xcconfig"; path = "Pods/Target Support Files/Pods-test-sm4/Pods-test-sm4.release.xcconfig"; sourceTree = "<group>"; };
+		4811D2248F298793BE8A1123 /* libPods-test-sm4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test-sm4.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		751A6B5D20F841550034FD30 /* test-sm4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-sm4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		751A6B6720F841550034FD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		751A6B6920F841570034FD30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		751A6B6C20F841570034FD30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		751A6B6E20F841570034FD30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		751A6B6F20F841570034FD30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		751A6B8120F848240034FD30 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		751A6B8220F848240034FD30 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		751A6B8420F848240034FD30 /* FMEncryptDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabase.h; sourceTree = "<group>"; };
+		751A6B8520F848240034FD30 /* FMEncryptDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabase.m; sourceTree = "<group>"; };
+		751A6B8620F848240034FD30 /* FMEncryptDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptDatabaseQueue.h; sourceTree = "<group>"; };
+		751A6B8720F848240034FD30 /* FMEncryptDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptDatabaseQueue.m; sourceTree = "<group>"; };
+		751A6B8820F848240034FD30 /* FMEncryptHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMEncryptHelper.h; sourceTree = "<group>"; };
+		751A6B8920F848240034FD30 /* FMEncryptHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMEncryptHelper.m; sourceTree = "<group>"; };
+		751A6B8B20F848240034FD30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		751A6B8C20F848240034FD30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		751A6B9320F8484B0034FD30 /* sm4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sm4.c; sourceTree = "<group>"; };
+		751A6B9420F8484B0034FD30 /* sm4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sm4.h; sourceTree = "<group>"; };
+		751A6B9520F8484B0034FD30 /* sm4test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sm4test.c; sourceTree = "<group>"; };
+		751A6B9620F8484B0034FD30 /* sms4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sms4.c; sourceTree = "<group>"; };
+		751A6B9A20F849860034FD30 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		751A6B9C20F84A2D0034FD30 /* sm4test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sm4test.h; sourceTree = "<group>"; };
+		751A6B9D20F84A410034FD30 /* sms4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sms4.h; sourceTree = "<group>"; };
+		CFB6871252A61138F87BA8DB /* Pods-test-sm4.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-sm4.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test-sm4/Pods-test-sm4.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		751A6B5A20F841550034FD30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751A6B9B20F849860034FD30 /* libsqlite3.tbd in Frameworks */,
+				C30421B97A1365A889F174CE /* libPods-test-sm4.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2527E3477ADC9221CD5D93D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6871252A61138F87BA8DB /* Pods-test-sm4.debug.xcconfig */,
+				2346DC411CB6028E974770CA /* Pods-test-sm4.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		751A6B5420F841550034FD30 = {
+			isa = PBXGroup;
+			children = (
+				751A6B5F20F841550034FD30 /* test-sm4 */,
+				751A6B5E20F841550034FD30 /* Products */,
+				2527E3477ADC9221CD5D93D5 /* Pods */,
+				E48C2A50B535CAC8832F821A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		751A6B5E20F841550034FD30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B5D20F841550034FD30 /* test-sm4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		751A6B5F20F841550034FD30 /* test-sm4 */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B8A20F848240034FD30 /* Controllers */,
+				751A6B8320F848240034FD30 /* Encrypt */,
+				751A6B8020F848240034FD30 /* Others */,
+				751A6B9220F8484B0034FD30 /* SM4 */,
+				751A6B6620F841550034FD30 /* Main.storyboard */,
+				751A6B6920F841570034FD30 /* Assets.xcassets */,
+				751A6B6B20F841570034FD30 /* LaunchScreen.storyboard */,
+				751A6B6E20F841570034FD30 /* Info.plist */,
+				751A6B6F20F841570034FD30 /* main.m */,
+			);
+			path = "test-sm4";
+			sourceTree = "<group>";
+		};
+		751A6B8020F848240034FD30 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B8120F848240034FD30 /* AppDelegate.h */,
+				751A6B8220F848240034FD30 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		751A6B8320F848240034FD30 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B8420F848240034FD30 /* FMEncryptDatabase.h */,
+				751A6B8520F848240034FD30 /* FMEncryptDatabase.m */,
+				751A6B8620F848240034FD30 /* FMEncryptDatabaseQueue.h */,
+				751A6B8720F848240034FD30 /* FMEncryptDatabaseQueue.m */,
+				751A6B8820F848240034FD30 /* FMEncryptHelper.h */,
+				751A6B8920F848240034FD30 /* FMEncryptHelper.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		751A6B8A20F848240034FD30 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B8B20F848240034FD30 /* ViewController.h */,
+				751A6B8C20F848240034FD30 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		751A6B9220F8484B0034FD30 /* SM4 */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B9320F8484B0034FD30 /* sm4.c */,
+				751A6B9420F8484B0034FD30 /* sm4.h */,
+				751A6B9C20F84A2D0034FD30 /* sm4test.h */,
+				751A6B9520F8484B0034FD30 /* sm4test.c */,
+				751A6B9D20F84A410034FD30 /* sms4.h */,
+				751A6B9620F8484B0034FD30 /* sms4.c */,
+			);
+			path = SM4;
+			sourceTree = "<group>";
+		};
+		E48C2A50B535CAC8832F821A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				751A6B9A20F849860034FD30 /* libsqlite3.tbd */,
+				4811D2248F298793BE8A1123 /* libPods-test-sm4.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		751A6B5C20F841550034FD30 /* test-sm4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 751A6B7320F841570034FD30 /* Build configuration list for PBXNativeTarget "test-sm4" */;
+			buildPhases = (
+				D8B8F1351EF32AAE0BB4BF46 /* [CP] Check Pods Manifest.lock */,
+				751A6B5920F841550034FD30 /* Sources */,
+				751A6B5A20F841550034FD30 /* Frameworks */,
+				751A6B5B20F841550034FD30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-sm4";
+			productName = "test-sm4";
+			productReference = 751A6B5D20F841550034FD30 /* test-sm4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		751A6B5520F841550034FD30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "test-sm4";
+				TargetAttributes = {
+					751A6B5C20F841550034FD30 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 751A6B5820F841550034FD30 /* Build configuration list for PBXProject "test-sm4" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 751A6B5420F841550034FD30;
+			productRefGroup = 751A6B5E20F841550034FD30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				751A6B5C20F841550034FD30 /* test-sm4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		751A6B5B20F841550034FD30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751A6B6D20F841570034FD30 /* LaunchScreen.storyboard in Resources */,
+				751A6B6A20F841570034FD30 /* Assets.xcassets in Resources */,
+				751A6B6820F841550034FD30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8B8F1351EF32AAE0BB4BF46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-sm4-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		751A6B5920F841550034FD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751A6B9120F848240034FD30 /* ViewController.m in Sources */,
+				751A6B9020F848240034FD30 /* FMEncryptHelper.m in Sources */,
+				751A6B9720F8484B0034FD30 /* sm4.c in Sources */,
+				751A6B8D20F848240034FD30 /* AppDelegate.m in Sources */,
+				751A6B9920F8484B0034FD30 /* sms4.c in Sources */,
+				751A6B8F20F848240034FD30 /* FMEncryptDatabaseQueue.m in Sources */,
+				751A6B7020F841570034FD30 /* main.m in Sources */,
+				751A6B9820F8484B0034FD30 /* sm4test.c in Sources */,
+				751A6B8E20F848240034FD30 /* FMEncryptDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		751A6B6620F841550034FD30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751A6B6720F841550034FD30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		751A6B6B20F841570034FD30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751A6B6C20F841570034FD30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		751A6B7120F841570034FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		751A6B7220F841570034FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		751A6B7420F841570034FD30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB6871252A61138F87BA8DB /* Pods-test-sm4.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97D2VSP7DU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "test-sm4/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.sm4.test-sm4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		751A6B7520F841570034FD30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2346DC411CB6028E974770CA /* Pods-test-sm4.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97D2VSP7DU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = automatic;
+				INFOPLIST_FILE = "test-sm4/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "test.sm4.test-sm4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		751A6B5820F841550034FD30 /* Build configuration list for PBXProject "test-sm4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751A6B7120F841570034FD30 /* Debug */,
+				751A6B7220F841570034FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		751A6B7320F841570034FD30 /* Build configuration list for PBXNativeTarget "test-sm4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				751A6B7420F841570034FD30 /* Debug */,
+				751A6B7520F841570034FD30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 751A6B5520F841550034FD30 /* Project object */;
+}
